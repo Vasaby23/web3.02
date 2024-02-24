@@ -1,0 +1,388 @@
+body{
+	background-color: #f2f8ff;
+}
+
+.hot-bar{
+    height: 40px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 200;
+    background-color: #fff;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e3e3ec;
+}
+
+.icon-bar{
+    width: 55px;
+    height: 55px;
+    margin-left: 3% ;
+    color: #28314a;
+    position: absolute;
+    margin-top: -10px
+}
+
+
+
+  @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 50px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: #bcdeff;
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: #bcdeff; }
+	80%  {fill: rgba(72,138,204,0); stroke: #bcdeff; stroke-width: 3; }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {
+    position: absolute;
+    margin-left: 4% ;
+    margin-top: -70px ;
+    overflow-y: 1 ;
+    z-index: 2;
+    top: 25px
+};
+
+
+.custom_input {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 700px;
+  margin-top: 300px;
+  min-height: 50px;
+  border: 2px solid #ccc; 
+} 
+
+.input1 {
+	font-size: 21px;
+	padding: 10px 10px;
+	width: 600px;
+	padding-left: 58px;
+	outline: none;
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #C4D1EB;
+	border-radius: 7px;
+	transition: .3s ease;
+  margin-top: 300px;
+  min-height: 50px;
+  position: absolute;
+  margin-left: 100px;
+}
+
+.input1:focus {
+	background: #FFFFFF;
+	border: 1px outset #5A7EC7;
+	border-radius: 10px;
+  margin-top: 300px;
+  .btn_btn-lg{
+	border-radius: 10px;
+  }
+}
+
+.input1::placeholder {
+	color: #DDDDDD;
+}
+
+.svg_icon {
+	position: absolute;
+	left: 10px;
+	fill: #3490FE;
+	width: 31px;
+	height: 31px;
+  margin-top: 307px;
+  padding-left: 110px;
+}
+
+
+.back {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #ffffff;
+	z-index: 999; 
+  }
+  
+  .loader {
+	width: 225px; 
+	height: 225px; 
+	aspect-ratio: 1; 
+	display: grid;
+	position: absolute; 
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%); 
+	z-index: 1000; 
+  }
+  
+  .loader:before,
+  .loader:after {
+	content: "";
+	grid-area: 1/1;
+	width: 105px; 
+	height: 105px; 
+	aspect-ratio: 1;
+	box-shadow: 0 0 0 9px #358efe inset; 
+	filter: drop-shadow(120px 120px 0 #358efe); 
+	animation: l8 2s infinite alternate;
+  }
+  
+  .loader:after {
+	margin: 0 0 0 auto; 
+	filter: drop-shadow(-120px 120px 0 #358efe); 
+	animation-delay: -1s;
+  }
+  
+  @keyframes l8 {
+	0%, 10%   { border-radius: 0; }
+	30%, 40%  { border-radius: 50% 0; }
+	60%, 70%  { border-radius: 50%; }
+	90%, 100% { border-radius: 0 50%; }
+  }
+
+.custom_input {
+	margin-left: 32%;
+}
+
+.svg_icon{
+	margin-left: 31.7%;
+	z-index: 5;
+}
+
+.btn_btn-lg{
+	background-color: #328ffe;
+	width: 40px;
+	height: 40px;
+	position: absolute; 
+	z-index: 3;
+	margin-top: 303.5px;
+	margin-left: 25.5%;
+	transition: background-color 0.3s, color 0.3s;
+	border-radius: 20%;
+	border: none;
+}
+
+.btn_btn-lg:hover{
+	background-color: #0e57b1;
+	color: #FFFFFF;
+}
+
+.error{
+	background-color: #f8dfdf;
+	color: #db504a;
+	height: 50px;
+	font-size: 20px;
+	padding-top: 24px;
+	display: none;
+	margin-left: 100px;
+	text-align: center;
+	width: 600px;
+	position: absolute;
+	margin-top: 370px;
+	border-radius: 0.5rem ;
+	
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.valid {
+	border-color: green; 
+}
+
+.menu{
+	color: gray;
+	position: absolute;
+	font-size: 18px;
+	bottom: 20px;
+	margin-left: 35%;
+	border: none;
+	background-color: #fff;
+}
+
+
+.menu1{
+	color: gray;
+	position: absolute;
+	font-size: 18px;
+	bottom: 20px;
+	margin-left: 45%;
+	border: none;
+	background-color: #fff;
+}
+
+.menu2{
+	color: gray;
+	position: absolute;
+	font-size: 18px;
+	bottom: 20px;
+	margin-left: 55%;
+	border: none;
+	background-color: #fff;
+}
+
+
+.login {
+	background-color: #fff;
+	padding: 1em 2em;
+	border: none;
+	border-radius: 7px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: #328ffe;
+	transition: all 1000ms;
+	font-size: 15px;
+	position: absolute;
+	overflow: hidden;
+	outline: 2px solid #328ffe;
+	margin-left: 80%;
+	bottom: 8.5px;
+	width: 170px;
+  }
+  
+  .login:hover {
+	color: #fff;
+	transform: scale(1.1);
+	outline: 2px solid #70bdca;
+	box-shadow: 4px 5px 17px -4px #328ffe;
+  }
+  
+  .login::before {
+	content: "";
+	position: absolute;
+	left: -50px;
+	top: 0;
+	width: 0;
+	height: 100%;
+	background-color: #328ffe;
+	transform: skewX(45deg);
+	z-index: -1;
+	transition: width 1000ms;
+  }
+  
+  .login:hover::before {
+	width: 250%;
+  }
+
+
+
+
+  .login , .reg:hover {
+	animation: rotate624 0.7s ease-in-out both;
+  }
+  
+  .login , .reg:hover span {
+	animation: storm1261 0.7s ease-in-out both;
+	animation-delay: 0.06s;
+  }
+  
+  @keyframes rotate624 {
+	0% {
+	  transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+  
+	25% {
+	  transform: rotate(3deg) translate3d(0, 0, 0);
+	}
+  
+	50% {
+	  transform: rotate(-3deg) translate3d(0, 0, 0);
+	}
+  
+	75% {
+	  transform: rotate(1deg) translate3d(0, 0, 0);
+	}
+  
+	100% {
+	  transform: rotate(0deg) translate3d(0, 0, 0);
+	}
+  }
+  
+  @keyframes storm1261 {
+	0% {
+	  transform: translate3d(0, 0, 0) translateZ(0);
+	}
+  
+	25% {
+	  transform: translate3d(4px, 0, 0) translateZ(0);
+	}
+  
+	50% {
+	  transform: translate3d(-3px, 0, 0) translateZ(0);
+	}
+  
+	75% {
+	  transform: translate3d(2px, 0, 0) translateZ(0);
+	}
+  
+	100% {
+	  transform: translate3d(0, 0, 0) translateZ(0);
+	}
+  }
+  
+
+
+  .reg {
+	background-color: #fff;
+	padding: 1em 2em;
+	border: none;
+	border-radius: 7px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: #328ffe;
+	transition: all 1000ms;
+	font-size: 15px;
+	position: absolute;
+	overflow: hidden;
+	outline: 2px solid #328ffe;
+	margin-left: 88%;
+	bottom: 8.5px;
+	width: 200px;
+  }
+  
+  .reg:hover {
+	color: #fff;
+	transform: scale(1.1);
+	outline: 2px solid #70bdca;
+	box-shadow: 4px 5px 17px -4px #328ffe;
+  }
+  
+  .reg::before {
+	content: "";
+	position: absolute;
+	left: -50px;
+	top: 0;
+	width: 0;
+	height: 100%;
+	background-color: #328ffe;
+	transform: skewX(45deg);
+	z-index: -1;
+	transition: width 1000ms;
+  }
+  
+  .reg:hover::before {
+	width: 250%;
+  }
